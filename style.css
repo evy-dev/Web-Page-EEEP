@@ -11,6 +11,8 @@
 :root{
   --green-color:#0A894B;
   --border-radius:16px !important;
+  --linear-gradient-color: linear-gradient(to left, yellow, #0A894B);
+  --gray-color: #E7E7E7;
 }
 
 header{
@@ -76,6 +78,10 @@ nav ul li a:hover{
   display: flex;
 }
 
+.buttonMore:hover{
+  cursor: pointer;
+}
+
 
 .buttonMore p{
   font-size: 24px !important;
@@ -108,7 +114,6 @@ nav ul li a:hover{
   flex-direction: column;
   align-items: center;
 }
-
 .containerNews{
   width: 1000px !important;
   height: 400px !important;
@@ -138,22 +143,58 @@ nav ul li a:hover{
   border-radius: var(--border-radius);
 }
 
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 .containerProjects{
   width: 1300px !important;
   height: 581px !important;
-  background:linear-gradient(to left, yellow, green);
+  background: var(--linear-gradient-color);
   display: flex;
 }
 
 .containerProjects div{
-  width: 399px;
-  height: 466px;
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   background-color:white;
   border-radius: var(--border-radius);
-  justify-content: space-between;
   margin: 57px 21px !important;
+}
 
+.buttonProjects{
+  width: 200px !important;
+  height: 61px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--linear-gradient-color);
+  color: black;
+  border:none;
+  border-radius: var(--border-radius);
+  margin-bottom: 50px !important;
+  font-size: 18px !important;
+} 
+
+.containerProjects img{
+  width:400px !important;
+  height: 280px !important;
+  border-radius: 16px 16px 0 0; 
+}
+
+.containerProjects div p{
+  font-size: 20px !important;
+  color: black;
+  justify-content: center;
+  display: flex;
+  /* margin-top: 10px!important; */
 }
 
 .footer{
@@ -161,7 +202,7 @@ nav ul li a:hover{
   height: 35px !important;
   bottom: 0;
   left: 0;
-  background-color: var(--green-color);
+  background: var(--linear-gradient-color);
   display: flex;
   align-items: center;
   justify-content: center ;
